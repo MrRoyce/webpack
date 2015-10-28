@@ -21,7 +21,7 @@ module.exports = {
                 exclude : /node_modules/,
                 loader  : 'style-loader!css-loader'
             }, {
-                test    : /\.(png|jpg)$/,
+                test    : /\.(png|jpg|ttf|eot)$/,
                 exclude : /node_modules/,
                 loader  : 'url-loader?limit=10000'
             }

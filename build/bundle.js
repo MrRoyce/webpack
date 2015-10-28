@@ -53,34 +53,21 @@
 
 	console.log('App loaded!');
 
-	var img = document.createElement('img');
-	img.style.height = '25%';
-	img.style.width = '25%';
-	img.src = __webpack_require__(2);
-
-	document.getElementById('img_container').appendChild(img);
-
-	__webpack_require__(3);
-	__webpack_require__(7);
+	__webpack_require__(2);
+	__webpack_require__(6);
 
 
 /***/ },
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "974262647c82057b6078c432841a53ea.png"
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(4);
+	var content = __webpack_require__(3);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(6)(content, {});
+	var update = __webpack_require__(5)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -97,10 +84,10 @@
 	}
 
 /***/ },
-/* 4 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(5)();
+	exports = module.exports = __webpack_require__(4)();
 	// imports
 
 
@@ -111,7 +98,7 @@
 
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 	/*
@@ -167,7 +154,7 @@
 
 
 /***/ },
-/* 6 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -421,16 +408,16 @@
 
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(8);
+	var content = __webpack_require__(7);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(6)(content, {});
+	var update = __webpack_require__(5)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -447,18 +434,42 @@
 	}
 
 /***/ },
-/* 8 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(5)();
+	exports = module.exports = __webpack_require__(4)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "body {\r\n    padding-top: 80px;\r\n}\r\n\r\n.navbar {\r\n     background-image: linear-gradient(to bottom,#007C0C 0,#000C0C 100%);\r\n}\r\n\r\n.bg_header_img {\r\n    background: url(" + __webpack_require__(2) + ") -131px 1px no-repeat;\r\n    margin-right: 15px;\r\n    height: 150px;\r\n    width: 150px;\r\n}\r\n\r\nh3 {\r\n    font-size: 18px;\r\n}\r\n", ""]);
+	exports.push([module.id, "@font-face {\r\n    font-family: 'Lora';\r\n\r\n    /* These can be loaded thanks to the url-loader */\r\n    src: url(" + __webpack_require__(8) + ");\r\n    src: url(" + __webpack_require__(9) + ");\r\n    src: url(" + __webpack_require__(10) + ");\r\n    src: url(" + __webpack_require__(11) + ");\r\n}\r\n\r\nbody {\r\n    font-family: 'Lora, Helvetica, Arial' ;\r\n    padding-top: 80px;\r\n}\r\n", ""]);
 
 	// exports
 
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "72631269e4dc9b244bfb441ea22188fe.ttf"
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "de63b078c6d93a995e6d2d77c3c4e303.ttf"
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "9f29b0511c09bc963b6439efc1f21d4e.ttf"
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "5201370ab48910334f617a477bd54482.ttf"
 
 /***/ }
 /******/ ]);
