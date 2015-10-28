@@ -1,5 +1,5 @@
 console.log('App loaded!');
 
-var config = require('../config/config.json');
+$('#testDiv').text('jQuery modified this content (see app.js)');
 
-console.log(config.app_loaded_msg);
+require('./login');
